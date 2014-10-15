@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="img/favicon.ico">
+
+	<title>UTS | Travel Funding Approval</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Custom styles for this template -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<div id="uts-logo" class="pull-left">
+						<img src="http://www.uts.edu.au/sites/default/files/logo_2.png" class="img-responsive" />
+					</div>
+
+				</div>
+				<p class="navbar-text">TFAS</p>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+
+		<form class="form-horizontal">
+			<fieldset>
+
+				<!-- Form Name -->
+				<legend>TFA form</legend>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="Personal details">First application this year?</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="Personal details-0">
+								<input name="Personal details" id="Personal details-0" value="yes" checked="checked" type="radio">Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label for="Personal details-1">
+								<input name="Personal details" id="Personal details-1" value="no" type="radio">No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="surname">Surname</label>
+					<div class="col-md-4">
+						<input id="surname" name="surname" placeholder="" class="form-control input-md" required="" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="first_name">First Name</label>
+					<div class="col-md-4">
+						<input id="first_name" name="first_name" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="school_unit">School / Unit</label>
+					<div class="col-md-4">
+						<input id="school_unit" name="school_unit" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="supervisor">Supervisor</label>
+					<div class="col-md-4">
+						<input id="supervisor" name="supervisor" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="phone">Phone</label>
+					<div class="col-md-4">
+						<input id="phone" name="phone" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="Travel details">Type of paper</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="Travel details-0">
+								<input name="Travel details" id="Travel details-0" value="conference" checked="checked" type="radio">Conference paper
+							</label>
+						</div>
+						<div class="radio">
+							<label for="Travel details-1">
+								<input name="Travel details" id="Travel details-1" value="journal" type="radio">Journal paper
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_name">Conference name</label>
+					<div class="col-md-4">
+						<input id="conference_name" name="conference_name" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_details">Conference details</label>
+					<div class="col-md-4">
+						<textarea class="form-control" id="conference_details" name="conference_details"></textarea>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_url">Conference URL</label>
+					<div class="col-md-4">
+						<input id="conference_url" name="conference_url" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="date_placeholde">Start date placeholder</label>
+					<div class="col-md-4">
+						<input id="date_placeholde" name="date_placeholde" placeholder="placeholder" class="form-control input-md" type="text">
+						<span class="help-block">insert datepicker later</span> 
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="end_date">End date placeholder</label>
+					<div class="col-md-4">
+						<input id="end_date" name="end_date" placeholder="placeholder" class="form-control input-md" type="text">
+						<span class="help-block">insert datepicker later</span> 
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="travel_date">Travel date placeholder</label>
+					<div class="col-md-4">
+						<input id="travel_date" name="travel_date" placeholder="placeholder" class="form-control input-md" type="text">
+						<span class="help-block">insert datepicker later</span> 
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="end_travel_date">End travel date placeholder</label>
+					<div class="col-md-4">
+						<input id="end_travel_date" name="end_travel_date" placeholder="placeholder" class="form-control input-md" type="text">
+						<span class="help-block">insert datepicker later</span> 
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_country">Country</label>
+					<div class="col-md-4">
+						<input id="conference_country" name="conference_country" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_region">Region</label>
+					<div class="col-md-4">
+						<input id="conference_region" name="conference_region" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_city">City</label>
+					<div class="col-md-4">
+						<input id="conference_city" name="conference_city" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_quality">Conference quality</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="conference_quality-0">
+								<input name="conference_quality" id="conference_quality-0" value="a" checked="checked" type="radio">A
+							</label>
+						</div>
+						<div class="radio">
+							<label for="conference_quality-1">
+								<input name="conference_quality" id="conference_quality-1" value="b" type="radio">B
+							</label>
+						</div>
+						<div class="radio">
+							<label for="conference_quality-2">
+								<input name="conference_quality" id="conference_quality-2" value="other" type="radio">Other
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="quality_comment">Quality and importance of publication</label>
+					<div class="col-md-4">
+						<textarea class="form-control" id="quality_comment" name="quality_comment">Comment on quality and importance of publication</textarea>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="paper_title">Title of paper</label>
+					<div class="col-md-4">
+						<input id="paper_title" name="paper_title" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Multiple Checkboxes -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="attached">Paper/Poster attached?</label>
+					<div class="col-md-4">
+						<div class="checkbox">
+							<label for="attached-0">
+								<input name="attached" id="attached-0" value="yes" type="checkbox">Yes
+							</label>
+						</div>
+						<div class="checkbox">
+							<label for="attached-1">
+								<input name="attached" id="attached-1" value="no" type="checkbox">No, acceptance is pending
+							</label>
+						</div>
+						<div class="checkbox">
+							<label for="attached-2">
+								<input name="attached" id="attached-2" value="email" type="checkbox">Email confirmation attached
+							</label>
+						</div>
+						<div class="checkbox">
+							<label for="attached-3">
+								<input name="attached" id="attached-3" value="peer_reviews" type="checkbox">Peer reviews attached
+							</label>
+						</div>
+						<div class="checkbox">
+							<label for="attached-4">
+								<input name="attached" id="attached-4" value="copy_of_papers" type="checkbox">Copy of paper attached
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="herdc">HERDC points</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="herdc-0">
+								<input name="herdc" id="herdc-0" value="yes" checked="checked" type="radio">Yes, the paper attracts HERDC points (Peer reviews on the full paper have already taken place and paper will be associated with an ISBN)
+							</label>
+						</div>
+						<div class="radio">
+							<label for="herdc-1">
+								<input name="herdc" id="herdc-1" value="no" type="radio">No, the paper does not attract HERDC points.
+							</label>
+						</div>
+						<div class="radio">
+							<label for="herdc-2">
+								<input name="herdc" id="herdc-2" value="" type="radio">No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="travel_justification">Justification for Travel</label>
+					<div class="col-md-4">
+						<textarea class="form-control" id="travel_justification" name="travel_justification">Why is this conference appropriate?</textarea>
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="special_duties">Special conference duties</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="special_duties-0">
+								<input name="special_duties" id="special_duties-0" value="yes" checked="checked" type="radio">Special invitation to conference received
+							</label>
+						</div>
+						<div class="radio">
+							<label for="special_duties-1">
+								<input name="special_duties" id="special_duties-1" value="no" type="radio">Will perform special duties significantly beyond of those presenting a paper. If so, please describe the nature of your invited contribution and attach evidence
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Appended Input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="files_attachment">File attachment</label>
+					<div class="col-md-4">
+						<div class="input-group">
+							<input id="files_attachment" name="files_attachment" class="form-control" placeholder="placeholder" type="text">
+							<span class="input-group-addon">placeholder</span>
+						</div>
+						<p class="help-block">PLACEHOLDER</p>
+					</div>
+				</div>
+				<!-- Multiple Checkboxes -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="other_available_funding">Other available travel funding</label>
+					<div class="col-md-4">
+						<div class="checkbox">
+							<label for="other_available_funding-0">
+								<input name="other_available_funding" id="other_available_funding-0" value="research_grant" type="checkbox">I have a research grant
+							</label>
+						</div>
+						<div class="checkbox">
+							<label for="other_available_funding-1">
+								<input name="other_available_funding" id="other_available_funding-1" value="research_student" type="checkbox">I am a research student
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="research_area">I, or my supervisor, am a member of the following Research Strength:</label>
+					<div class="col-md-4">
+						<input id="research_area" name="research_area" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="travel_support">Travel support is available to its members</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="travel_support-0">
+								<input name="travel_support" id="travel_support-0" value="yes" checked="checked" type="radio">Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label for="travel_support-1">
+								<input name="travel_support" id="travel_support-1" value="no" type="radio">No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="stage">Stage</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="stage-0">
+								<input name="stage" id="stage-0" value="1" checked="checked" type="radio">Stage 1 (pre DA)
+							</label>
+						</div>
+						<div class="radio">
+							<label for="stage-1">
+								<input name="stage" id="stage-1" value="2" type="radio">Stage 2 (post DA)
+							</label>
+						</div>
+						<div class="radio">
+							<label for="stage-2">
+								<input name="stage" id="stage-2" value="3" type="radio">Stage 3 (Final/writing up)
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="supervisor_grant">Budget has been granted by supervisor</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="supervisor_grant-0">
+								<input name="supervisor_grant" id="supervisor_grant-0" value="yes" checked="checked" type="radio">Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label for="supervisor_grant-1">
+								<input name="supervisor_grant" id="supervisor_grant-1" value="no" type="radio">No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="vc_fund">Applied for VC's conference fund?</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label for="vc_fund-0">
+								<input name="vc_fund" id="vc_fund-0" value="yes" checked="checked" type="radio">Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label for="vc_fund-1">
+								<input name="vc_fund" id="vc_fund-1" value="no" type="radio">No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Prepended text-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="requested_amount">And was granted</label>
+					<div class="col-md-4">
+						<div class="input-group">
+							<span class="input-group-addon">$</span>
+							<input id="requested_amount" name="requested_amount" class="form-control" placeholder="placeholder" type="text">
+						</div>
+						<p class="help-block">PLACEHOLDER</p>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="air_fare">Air fare</label>
+					<div class="col-md-4">
+						<input id="air_fare" name="air_fare" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="accommodation">Accommodation</label>
+					<div class="col-md-4">
+						<input id="accommodation" name="accommodation" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="conference_fees">Conference fees</label>
+					<div class="col-md-4">
+						<input id="conference_fees" name="conference_fees" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="meals">Meals</label>
+					<div class="col-md-4">
+						<input id="meals" name="meals" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="local_fares">Local fares</label>
+					<div class="col-md-4">
+						<input id="local_fares" name="local_fares" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="car_mileage">Car mileage</label>
+					<div class="col-md-4">
+						<input id="car_mileage" name="car_mileage" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="other">Other</label>
+					<div class="col-md-4">
+						<input id="other" name="other" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="total_expensive">Total expenses</label>
+					<div class="col-md-4">
+						<input id="total_expensive" name="total_expensive" placeholder="" class="form-control input-md" type="text">
+
+					</div>
+				</div>
+
+			</fieldset>
+		</form>
+
+
+	</div>
+	<!-- /container -->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/workaround.js"></script>
+</body>
+
+</html>
