@@ -56,7 +56,7 @@
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="personal-details">
 					<?php include 'personal-details.php'; ?>
-					<?php //include 'travel-details.php'; ?>
+					<?php// include 'travel-details.php'; ?>
 				</div>
 
 				<div class="tab-pane fade" id="travel-details">
@@ -112,14 +112,9 @@
 		    $("#other_conf").hide();
 
 
-			var myRadio = $("input[id='conference_quality-2']:checked").val();
-
 			$(".conf_quality").click(function () {
 				var conf_q = $(this).val();
 				if (conf_q == "other") {
-					if($("input[id='conference_quality-2']").attr('checked')){
-						alert("checked");
-					}
 					$("#other_conf").show();
 					$("#conference_quality_div").removeClass('col-xs-12');
 					$("#conference_quality_div").addClass('col-xs-6');
@@ -130,7 +125,84 @@
 					$("#conference_quality_div").removeClass('col-xs-6');
 		        }
 			});
+
+			$(".research-strength").hide();
+
+			$(".rs").click(function () {
+				var rs = $(this).val();
+				if (rs == 1) {
+					$(".research-strength").show();
+		        }
+		        else{
+		        	$(".research-strength").hide();
+		        }
+			});
+
+			$(".vc_grant_amount").hide();
+			$(".vc_fund").click(function () {
+				var vc_fund = $(this).val();
+				if (vc_fund == 1) {
+					$(".vc_grant_amount").show();
+					$(".vc_fund_div").removeClass('col-sm-12');
+					$(".vc_fund_div").addClass('col-sm-6');
+		        }
+		        else{
+		        	$(".vc_grant_amount").hide();
+		        	$(".vc_fund_div").addClass('col-sm-12');
+					$(".vc_fund_div").removeClass('col-sm-6');
+		        }
+			});
+
+			$(".pep-dates").hide();
+			$(".pep").click(function () {
+				var pep = $(this).val();
+				if (pep == 1) {
+					$(".pep-dates").show();
+		        }
+		        else{
+		        	$(".pep-dates").hide();
+		        }
+			});
+
+			$("#contrib_text").hide();
+			$(".special_duties").click(function () {
+				var pep = $(this).val();
+				if (pep == 1) {
+					$("#contrib_text").show();
+		        }
+		        else{
+		        	$("#contrib_text").hide();
+		        }
+			});
+			
+
+
 		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('change', '.btn-file :file', function() {
+	    var input = $(this),
+	        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+	        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+	    input.trigger('fileselect', [numFiles, label]);
+		});
+
+		$(document).ready(function() {
+		    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+
+		        var input = $(this).parents('.input-group').find(':text'),
+		            log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+		        if (input.length) {
+		            input.val(log);
+		        } else {
+		            if (log) alert(log);
+		        }
+
+		    });
+		});
+
 	</script>
 
 

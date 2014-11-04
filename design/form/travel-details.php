@@ -4,7 +4,7 @@
   <label>Type of paper</label>
   <div class="radio">
     <label class="radio-inline" for="travel-details-0">
-      <input name="travel-details" id="travel-details-0" value="conference" checked="checked" type="radio">Conference paper
+      <input name="travel-details" id="travel-details-0" value="conference" type="radio">Conference paper
     </label>
   </div>
   <div class="radio">
@@ -146,7 +146,7 @@
   <label for="herdc">HERDC points</label>
   <div class="radio">
     <label for="herdc-0">
-      <input name="herdc" id="herdc-0" value="yes" checked="checked" type="radio">Yes, the paper attracts HERDC points (Peer reviews on the full paper have already taken place and paper will be associated with an ISBN)
+      <input name="herdc" id="herdc-0" value="yes" type="radio">Yes, the paper attracts HERDC points (Peer reviews on the full paper have already taken place and paper will be associated with an ISBN)
     </label>
   </div>
   <div class="radio">
@@ -172,21 +172,62 @@
   <label for="special_duties">Special conference duties</label>
   <div class="radio">
     <label for="special_duties-0">
-      <input name="special_duties" id="special_duties-0" value="yes" checked="checked" type="radio">Special invitation to conference received
+      <input name="special_duties" id="special_duties-0" class="special_duties" value="0" type="radio">Special invitation to conference received
     </label>
   </div>
   <div class="radio">
     <label for="special_duties-1">
-      <input name="special_duties" id="special_duties-1" value="no" type="radio">Will perform special duties significantly beyond of those presenting a paper. If so, please describe the nature of your invited contribution and attach evidence
+      <input name="special_duties" id="special_duties-1" class="special_duties" value="1" type="radio">Will perform special duties significantly beyond of those presenting a paper. If so, please describe the nature of your invited contribution and attach evidence below
     </label>
   </div>
 </div>
 
+<!-- Textarea -->
+<div class="form-group col-xs-12" id="contrib_text">
+  <label for="invited_contribution">Nature of your invited contribution</label>
+  <textarea class="form-control" id="invited contribution" name="invited contribution" rows="3" placeholder="Please describe the nature of your invited contribution"></textarea>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group col-sm-4 col-xs-12">
+  <label for="pep">PEP Arrangements</label>
+  <div class="radio">
+    <label for="pep-0">
+      <input name="pep" class="pep" id="pep-0" value="1" type="radio">Yes
+    </label>
+  </div>
+  <div class="radio">
+    <label for="pep-1">
+      <input name="pep" class="pep" id="pep-1" value="0" type="radio">No
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-4 col-xs-6 pep-dates">
+  <label for="pep_start_date">PEP start date</label>
+    <input id="pep_" name="pep_" class="form-control input-sm" type="date">
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-4 col-xs-6 pep-dates">
+  <label for="pep_end_date">PEP end date</label>
+  <input id="pep_end_date" name="pep_end_date" class="form-control input-sm" type="date">
+</div>
+
 <!-- Appended Input-->
 <div class="form-group col-xs-12">
-  <label for="files_attachment">File attachment</label>
-    <input id="files_attachment" name="files_attachment" class="form-control" placeholder="placeholder" type="text">
-    <span class="input-group-addon">placeholder</span>
+  <label>Supporting documents</label>
+  <div class="input-group form-group">
+    <span class="input-group-btn">
+      <span class="btn btn-default btn-file">
+        Upload <span class="glyphicon glyphicon-upload"></span>
+    <input type="file" id="takePictureField" name="file">
+    </span>
+    </span>
+    <input type="text" class="form-control" readonly>
+  </div>
+  <p class="help-block">Please upload ZIP file</p>
 </div>
 
 <div class="form-group col-xs-6">

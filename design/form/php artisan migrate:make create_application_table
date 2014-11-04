@@ -1,0 +1,53 @@
+php artisan migrate:make create_application_table
+public function up()
+{
+  Schema::create('application', function($table)
+  {
+      $table->increments('id');
+      $table->string('surname');
+      $table->string('first');
+      $table->string('faculty');
+      $table->string('supervisor');
+      $table->string('email');
+      $table->string('paper_type');
+      $table->string('conference_name');
+      $table->string('conference_url');
+      $table->text('conference_details');
+      $table->date('start_date');
+      $table->date('end_date');
+      $table->date('travel_date');
+      $table->date('end_travel_date');
+      $table->string('country');
+      $table->string('region');
+      $table->string('city');
+      $table->string('conference_quality');
+      $table->string('paper_title');
+      $table->string('herdc');
+      $table->text('travel_justification');
+      $table->boolean('special_duties');
+      $table->text('special_duties_comments');
+      $table->boolean('pep');
+      $table->date('pep_start_date');
+      $table->date('pep_end_date');
+      $table->string('file_upload');
+      $table->string('other_travel_funding');
+      $table->string('research_stregth');
+      $table->boolean('travel_support');
+      $table->integer('stage');
+      $table->boolean('supervisor_grant');
+      $table->integer('amount_granted');
+      $table->integer('air_fare');
+      $table->integer('accommdation');
+      $table->integer('conference_fees');
+      $table->integer('meals');
+      $table->integer('local_fares');
+      $table->integer('car_mileage');
+      $table->integer('other');
+      $table->timestamps();
+  });
+}
+
+public function down()
+{
+  Schema::drop('application');
+}
