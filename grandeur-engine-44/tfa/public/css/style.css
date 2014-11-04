@@ -1,0 +1,20 @@
+body {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+#uts-logo{
+	height: 45px;
+	width: 100px;
+	float: left;
+}
+
+nav{
+	font-size: 1.5em;
+}
+
+.navbar-text{
+	color: white !important;
+}
+
